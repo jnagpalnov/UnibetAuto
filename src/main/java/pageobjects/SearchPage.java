@@ -36,4 +36,13 @@ public class SearchPage extends BasePage {
     public void selectSearchResultFromDropdown(){
         findElements(searchFieldDropDownResults).get(1).click();
     }
+
+    public void verifyArticleHeading(String searchItem){
+        Assert.assertTrue("Article with heading " + searchItem+ " is not present",isElementPresent(By.xpath("//h1[contains(.,'" + searchItem+"')]")));
+    }
+
+    public void verifyErrorMessage(String errorMessage){
+        Assert.assertTrue("Error message " + errorMessage+ " is not present",isElementPresent(By.xpath("//h1[contains(.,'" + errorMessage+"')]")));
+
+    }
 }

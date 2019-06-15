@@ -27,7 +27,17 @@ public class SearchPageSteps {
     }
 
     @When("^User select topmost search result for \"(.*)\"$")
-    public void selectTopMostResult() throws Throwable{
+    public void selectTopMostResult(String searchItem) throws Throwable{
         searchPage.selectSearchResultFromDropdown();
+    }
+
+    @When("^User is redirected to the \"(.*)\" news article page$")
+    public void verifyArticleHeading(String searchItem) throws Throwable{
+        searchPage.verifyArticleHeading(searchItem);
+    }
+
+    @Then("^Error \"(.*)\" should be displayed$")
+    public void verifyErrorMessage(String message) throws Throwable{
+        searchPage.verifyErrorMessage(message);
     }
 }
