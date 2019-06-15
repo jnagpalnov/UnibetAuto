@@ -8,7 +8,7 @@ public class BlogPageSteps {
 
     BlogPage blogPage=new BlogPage();
 
-    @When("User clicks blogs menu")
+    @When("User clicks the blog menu")
     public void clickBlogMenu() throws Throwable{
         blogPage.clickBlogMenu();
     }
