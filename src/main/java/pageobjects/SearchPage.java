@@ -43,6 +43,5 @@ public class SearchPage extends BasePage {
 
     public void verifyErrorMessage(String errorMessage){
         Assert.assertTrue("Error message " + errorMessage+ " is not present",isElementPresent(By.xpath("//h1[contains(.,'" + errorMessage+"')]")));
-
     }
 }
