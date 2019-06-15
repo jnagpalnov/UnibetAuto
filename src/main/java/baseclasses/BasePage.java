@@ -66,28 +66,15 @@ public class BasePage {
      * @return return list of web elements
      */
     protected List<WebElement> findElements(By by){
-        try {
-           // Reporter.log("Waiting for visibility of elements having locator:" + by);
             return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
-        }
-        catch (TimeoutException ex){
-            return null;
-        }
     }
 
     protected WebElement find(By by){
-        try {
-            // wait.until(ExpectedConditions.stalenessOf(driver.findElement(by)));
-            return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-        }
-        catch (TimeoutException ex){
-            return null;
-        }
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
     protected WebElement findElementPresence(By by){
         try {
-            // wait.until(ExpectedConditions.stalenessOf(driver.findElement(by)));
             return wait.until(ExpectedConditions.presenceOfElementLocated(by));
         }
         catch (TimeoutException ex){
