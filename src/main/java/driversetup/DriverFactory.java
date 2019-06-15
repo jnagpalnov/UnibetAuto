@@ -41,29 +41,6 @@ public class DriverFactory {
     }
 
     /**
-     * Initialize Web driver
-     */
-    private void initializeWebDriver()  {
-        String browser= System.getProperty("browser")!=null?System.getProperty("browser"):CommonUtils.getCentralData("Browser");
-
-        if(browser.equalsIgnoreCase("Chrome")) {
-           // WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        }
-        else if(browser.equalsIgnoreCase("Firefox")){
-          //  WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        }
-        else {
-           // WebDriverManager.iedriver().setup();
-            //System.setProperty("webdriver.ie.driver",CommonUtils.getCentralData("IEDriverExePath"));
-            driver = new InternetExplorerDriver();
-        }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
-
-    /**
      * Initialize Appium driver
      */
     private void initializeAppiumDriver()  {
@@ -73,8 +50,6 @@ public class DriverFactory {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,CommonUtils.getCentralData("PlatformVersion"));
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,CommonUtils.getCentralData("DeviceName"));
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-        //capabilities.setCapability("appPackage",CommonUtils.getCentralData("AppPackage"));
-        //capabilities.setCapability("appActivity",CommonUtils.getCentralData("AppActivity"));
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,120);
         WebDriverManager.chromedriver().setup();
         try {

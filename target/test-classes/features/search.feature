@@ -2,11 +2,15 @@ Feature: Search
   Background:
     Given User is on the Home page and accept cookies
 
-   Scenario: User perform search from Blog menu drawer
+   Scenario Outline:User perform search from Blog menu drawer
       When User clicks the blog menu
-      And Search for the "Football"
-      Then Search results for "Football" are displayed
-
+      And Search for the "<SearchItem>"
+      Then Search results for "<SearchItem>" are displayed
+     Examples:
+       |SearchItem|
+       |Football|
+       |Tennis|
+       |Golf|
 
      Scenario: User perform search on search page
        When User clicks the blog menu
