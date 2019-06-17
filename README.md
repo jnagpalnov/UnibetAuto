@@ -15,10 +15,10 @@
 </ul>
 <h3>Framework Overview</h3>
 <p>The framework is based on page object design pattern and it's leveraging Cucumber BDD. The major components of the framework are:</p>
-<ul><li> DriverFactory: A Singleton Class to intialize the Web Driver</li> <li> BaseClass: Contians all the reusable methods like find element, isElementPresent, GetElementText etc..</li><li>PageObjects: Application pages containing page methods and locators</li>
-  <li>CentralData.Properties: Containing device and web application specific data such as App Url, Device Name, device type and version.</li>
+<ul><li> DriverFactory: A Singleton Class to intialize the Web Driver</li> <li> BaseClass: Contians all the reusable methods such as find element, isElementPresent, GetElementText etc..</li><li>PageObjects: Application pages containing page methods and locators</li>
+  <li>CentralData.Properties: Containing device and web application specific data such as <b>App Url, Device Name, device type and version.</b></li>
 </ul>
-<h4> Cucumber BDD specific components:<h4>
+<h4> Cucumber BDD specific components:</h4>
    <ul>
   <li>Stepdefinitions: Contain step definitions of application pages.</li>
   <li>Features: Containing fetaures files</li>
@@ -31,7 +31,7 @@
     <li> Import the project as a maven Project in IDE such as InteliJ IDEA</li>
   <li> Start the <b>Appium Server</b>
     <li> Specify the Web App URL, AppiumServerURL, PlatformName, PlatformVersion and DeviceName  in "src/test/resources/CentralData.properties" file</li>
- <p>Run the "src/test/java/runner/CucumberTestRunner.java" class</p>
+ <li>Run the "src/test/java/runner/CucumberTestRunner.java" class</li>
  <h3> Cucumber Html output:</h3>
  <p> After running the tests, execute the maven goal <b> mvn cluecumber-report:reporting</b> and it will generate a HTML output report under <b>"target/generated-report"</b> folder</p>
   </ul>
