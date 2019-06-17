@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: Search </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>42</td>
+                        <td>17 Jun 2019, 20:35</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-Search" href="search-feature.html">Search</a></td>
+            <td id="stats-number-scenarios-Search">1</td>
+      <td id="stats-number-scenarios-passed-Search">0</td>
+      <td id="stats-number-scenarios-failed-Search">1</td>
+      <td id="stats-number-steps-Search">4</td>
+      <td id="stats-number-steps-passed-Search">1</td>
+      <td id="stats-number-steps-failed-Search"      class="failed" >1</td>
+      <td id="stats-number-steps-skipped-Search"      class="skipped" >2</td>
+      <td id="stats-number-steps-pending-Search"   >0</td>
+      <td id="stats-number-steps-undefined-Search" >0</td>
+      <td id="stats-number-steps-missing-Search"   >0</td>
+      <td id="stats-duration-Search" class="duration-format">03s 672ms</td>
+      <td id="stats-status-Search" class="failed">Failed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="failed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>Search
+    </div>
+  </div>
+  <div class="feature-description"></div>
+
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">User is on the Home page and accept cookies</span><span class="step-duration">413ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">User perform search from Blog menu drawer and verify the search results</span></div>
+          <div class="failed"><span class="step-keyword">When  </span><span class="step-name">User clicks the blog menu</span><span class="step-duration">03s 259ms</span><div class="output_message"><input class="output_collapse" id="output_2047799833" type="checkbox"><label for="output_2047799833">cucumber.runtime.CucumberException: Failed to instantiate class stepdefinitions.BlogPageSteps</label><div>	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)<br/>	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)<br/>	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)<br/>	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)<br/>	at cucumber.runtime.Runtime.runStep(Runtime.java:300)<br/>	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)<br/>	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)<br/>	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)<br/>	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)<br/>	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)<br/>	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)<br/>	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)<br/>	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)<br/>	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)<br/>	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)<br/>	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)<br/>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)<br/>	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)<br/>	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)<br/>	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)<br/>	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)<br/>	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)<br/>	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)<br/>	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)<br/>	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)<br/>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)<br/>	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)<br/>	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)<br/>	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)<br/>	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)<br/>	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)<br/>	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)<br/>Caused by: java.lang.reflect.InvocationTargetException<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br/>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br/>	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br/>	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)<br/>	... 31 more<br/>Caused by: org.openqa.selenium.WebDriverException: Connection refused: connect<br/>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br/>System info: host: 'HOME-PC', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'<br/>Driver info: driver.version: AppiumDriver<br/>	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)<br/>	at java.util.Optional.orElseGet(Optional.java:267)<br/>	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br/>	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br/>	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)<br/>	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)<br/>	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)<br/>	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)<br/>	at driversetup.DriverFactory.initializeAppiumDriver(DriverFactory.java:56)<br/>	at driversetup.DriverFactory.<init>(DriverFactory.java:30)<br/>	at driversetup.DriverFactory.getInstanceOfDriverFactory(DriverFactory.java:38)<br/>	at baseclasses.BasePage.<init>(BasePage.java:23)<br/>	at pageobjects.BlogPage.<init>(BlogPage.java:7)<br/>	at stepdefinitions.BlogPageSteps.<init>(BlogPageSteps.java:9)<br/>	... 36 more<br/>Caused by: java.net.ConnectException: Connection refused: connect<br/>	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)<br/>	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)<br/>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br/>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)<br/>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br/>	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)<br/>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br/>	at java.net.Socket.connect(Socket.java:589)<br/>	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)<br/>	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)<br/>	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br/>	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br/>	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br/>	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br/>	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br/>	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br/>	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br/>	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br/>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br/>	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br/>	at okhttp3.RealCall.execute(RealCall.java:77)<br/>	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br/>	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)<br/>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.lang.reflect.Method.invoke(Method.java:498)<br/>	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)<br/>	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)<br/>	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br/>	... 50 more<br/></div></div></div>
+      
+            <div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">Search for the &quot;Football&quot;</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">Search results for &quot;Football&quot; are displayed</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
