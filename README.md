@@ -39,4 +39,4 @@
 <img src="https://i.ibb.co/d2c2V3R/r1.png" alt="r1" border="0">
 <img src="https://i.ibb.co/XXv7BNB/r2.png" alt="r2" border="0">
 <h4>What you would automate if you could spend more time on the project.</h4>
-<p>If I will get more time then I will automate some more funtional test-cases around Search functionality.</p>
+<p>I will automate some more funtional test-cases around Search functionality.</p>
