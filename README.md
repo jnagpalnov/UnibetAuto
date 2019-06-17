@@ -32,7 +32,9 @@
   <li> Start the <b>Appium Server</b>
     <li> Specify the Web App URL, AppiumServerURL, PlatformName, PlatformVersion and DeviceName  in "src/test/resources/CentralData.properties" file</li>
  <li>Run the "src/test/java/runner/CucumberTestRunner.java" class</li>
+  </ul>
   <img src="https://i.ibb.co/hXfLN4k/cucumber-run.png" alt="cucumber-run" border="0">
  <h3> Cucumber Html output:</h3>
  <p> After running the tests, execute the maven goal <b> mvn cluecumber-report:reporting</b> and it will generate a HTML output report under <b>"target/generated-report"</b> folder</p>
-  </ul>
+<img src="https://i.ibb.co/d2c2V3R/r1.png" alt="r1" border="0">
+<img src="https://i.ibb.co/XXv7BNB/r2.png" alt="r2" border="0">
