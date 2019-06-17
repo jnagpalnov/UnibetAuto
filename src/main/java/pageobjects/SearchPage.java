@@ -19,13 +19,13 @@ public class SearchPage extends BasePage {
     public void changeSearchItem(String searchItem){
         WebElement searchField=find(this.searchField);
         searchField.clear();
-        enterText(searchField,"searchItem");
+        enterText(searchField,searchItem);
     }
 
     public void verifySearchDropdownContent(String searchItem){
         for(WebElement searchResult:findElements(searchFieldDropDownResults))
         {
-            Assert.assertTrue("Expected keyword '" +searchItem+"' is not present in" +searchResult.getText(),searchResult.getText().contains(searchItem));
+            Assert.assertTrue("Expected keyword '" +searchItem+"' is not present in" +searchResult.getText(),searchResult.getText().contains(searchItem) || searchResult.getText().contains(searchItem.toLowerCase()));
         }
     }
 

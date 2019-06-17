@@ -69,7 +69,7 @@ public class DriverFactory {
     /**
      *  Set driverFactory instance null and quit WebDriver
      */
-    public void quit(){
+    public void quitDriver(){
         instanceOfDriverFactory=null;
         appiumDriver.quit();
     }

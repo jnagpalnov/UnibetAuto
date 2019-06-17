@@ -13,7 +13,7 @@ public class SearchPageSteps {
 
     @Then("^User change the search item to \"(.*)\"$")
     public void changeSearchIem(String searchItem) throws Throwable{
-        searchPage.changeSearchItem(searchItem);
+       searchPage.changeSearchItem(searchItem);
     }
 
     @Then("^Search dropdown should display search results for \"(.*)\"$")

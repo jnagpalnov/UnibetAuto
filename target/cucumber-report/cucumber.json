@@ -1,0 +1,528 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50262044903,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page and accept cookies",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User perform search from Blog menu drawer and verify search results",
+        "description": "",
+        "id": "search;user-perform-search-from-blog-menu-drawer-and-verify-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 2407538868,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BackgroundSteps.quitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1174607851,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the blog menu",
+            "match": {
+              "location": "BlogPageSteps.clickBlogMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2773691484,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search for the \"Football\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 16
+                }
+              ],
+              "location": "BlogPageSteps.searchSports(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7227021541,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Search results for \"Football\" are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchPageSteps.searchSports(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 49815077132,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page and accept cookies",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "User perform search on Search page",
+        "description": "",
+        "id": "search;user-perform-search-on-search-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2411827886,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BackgroundSteps.quitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 889164734,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks the blog menu",
+            "match": {
+              "location": "BlogPageSteps.clickBlogMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3383907004,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Search for the \"Football\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 16
+                }
+              ],
+              "location": "BlogPageSteps.searchSports(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6041748499,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Search results for \"Football\" are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchPageSteps.searchSports(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1652949938,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User change the search item to \"Tennis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tennis",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchPageSteps.changeSearchIem(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129202,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Search dropdown should display search results for \"Tennis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tennis",
+                  "offset": 51
+                }
+              ],
+              "location": "SearchPageSteps.verifySearchDropdownContent(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 903318375,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks the search icon",
+            "match": {
+              "location": "SearchPageSteps.clickSearchIcon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4808076686,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Search results for \"Tennis\" are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tennis",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchPageSteps.searchSports(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 59583985129,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page and accept cookies",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "User perform keyword search on Search page",
+        "description": "",
+        "id": "search;user-perform-keyword-search-on-search-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2497200124,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BackgroundSteps.quitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 770570112,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks the blog menu",
+            "match": {
+              "location": "BlogPageSteps.clickBlogMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4297481228,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Search for the \"Football\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 16
+                }
+              ],
+              "location": "BlogPageSteps.searchSports(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6556971677,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Search results for \"Football\" are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchPageSteps.searchSports(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1249648166,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User change the search item to \"Ten\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ten",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchPageSteps.changeSearchIem(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86939,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Search dropdown should display search results for \"Tennis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tennis",
+                  "offset": 51
+                }
+              ],
+              "location": "SearchPageSteps.verifySearchDropdownContent(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3029185732,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User select topmost search result for \"Tennis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tennis",
+                  "offset": 39
+                }
+              ],
+              "location": "SearchPageSteps.selectTopMostResult(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2674706564,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User is redirected to the \"Tennis\" news article page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tennis",
+                  "offset": 27
+                }
+              ],
+              "location": "SearchPageSteps.verifyArticleHeading(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 68084586159,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page and accept cookies",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "User perform invalid search on Search page",
+        "description": "",
+        "id": "search;user-perform-invalid-search-on-search-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2402285665,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BackgroundSteps.quitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1553289425,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User clicks the blog menu",
+            "match": {
+              "location": "BlogPageSteps.clickBlogMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3139033872,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Search for the \"%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "%",
+                  "offset": 16
+                }
+              ],
+              "location": "BlogPageSteps.searchSports(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211844549,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Error \"No search result\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No search result",
+                  "offset": 7
+                }
+              ],
+              "location": "SearchPageSteps.verifyErrorMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1876826561,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User change the search item to \"invalidSearchItem%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalidSearchItem%",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchPageSteps.changeSearchIem(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "search.feature"
+  }
+]

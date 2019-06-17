@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import commonutils.CommonUtils;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import driversetup.DriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -15,5 +16,12 @@ public class BackgroundSteps {
         driver.get(CommonUtils.getCentralData("AppUrl"));
         blogPage.acceptCookies();
     }
+
+    @After
+    public void quitDriver(){
+        DriverFactory.getInstanceOfDriverFactory().quitDriver();
+
+    }
+
 
 }
